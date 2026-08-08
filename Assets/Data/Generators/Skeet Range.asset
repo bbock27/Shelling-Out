@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7c254c4c5dc414eafb99d6d889a757, type: 3}
+  m_Name: Skeet Range
+  m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.GeneratorDefinition
+  id: skeet_range
+  displayName: Skeet Range
+  description: Pull! Spent shells rain down all day.
+  baseCost: 130000
+  costGrowth: 1.12
+  baseProduction: 2000
+  unlockAtLifetimeEarnings: 90000
+  icon: {fileID: 0}
+  tint: {r: 0.9098039, g: 0.5294118, b: 0.3529412, a: 1}

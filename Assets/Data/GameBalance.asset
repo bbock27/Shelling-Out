@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77ef38b0815145f89f4e4b5b95e6974, type: 3}
+  m_Name: GameBalance
+  m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.GameBalance
+  currencyName: Sand Dollars
+  premiumCurrencyName: Pearls
+  startingCurrency: 10000000000000
+  baseClickPower: 1
+  autosaveIntervalSeconds: 30
+  offlineCapHours: 8
+  offlineEfficiency: 1
+  prestigeBaseRequirement: 1000000
+  prestigeExponent: 0.5
+  pearlBonusPerUnit: 0.1
+  sieveSprite: {fileID: 21300000, guid: 119ab5326b22f485d98fcc671b2393c2, type: 3}
+  shellSprite: {fileID: 21300000, guid: c27391bdb54d14227809aff43738a6f8, type: 3}
+  generators:
+  - {fileID: 11400000, guid: 6cf666558229f4f929b7531fc9cadf34, type: 2}
+  - {fileID: 11400000, guid: 287837bb2fbd8438fbe243b7547c13af, type: 2}
+  - {fileID: 11400000, guid: 2c86684e40fa64965ac6f66c5fd4ce13, type: 2}
+  - {fileID: 11400000, guid: 7c8e729796d164a1f8b6256cf82addca, type: 2}
+  - {fileID: 11400000, guid: 24dbe3908c73c4b5bb4ce2f885cdef79, type: 2}
+  - {fileID: 11400000, guid: 53275adb92ee542f289076fd8b23f369, type: 2}
+  upgrades:
+  - {fileID: 11400000, guid: 85782453f5ca3476a9c0c21af9ce2496, type: 2}
+  - {fileID: 11400000, guid: 4015c3e1f93cc4c63a36b1e7c1287a3a, type: 2}
+  - {fileID: 11400000, guid: d124142a412764bd6845d3329f0824a0, type: 2}
+  - {fileID: 11400000, guid: 588c103a7c09840689bc141fdcd1b074, type: 2}
+  - {fileID: 11400000, guid: 3796ec1779b2b49a9824f74057fe4c86, type: 2}
+  - {fileID: 11400000, guid: 6cbb66566daf743c28892862cef182c4, type: 2}
+  - {fileID: 11400000, guid: 6b0d7a5bcc4d14505a822e8784571879, type: 2}
+  - {fileID: 11400000, guid: 3ae887a2b146d4ab78476755c6c6ba44, type: 2}
+  - {fileID: 11400000, guid: fa40ce6f8681b494ca21050f4fb3d77b, type: 2}
+  - {fileID: 11400000, guid: 26d21bbd9c77d44c78f0a21c3b211172, type: 2}
+  - {fileID: 11400000, guid: 071e5adb5a1824c7d9718d4ec4a389f2, type: 2}
+  - {fileID: 11400000, guid: b5ae2742110ff4aab88dddda10e26a31, type: 2}
+  shellTypes:
+  - {fileID: 11400000, guid: af65d12724c624c75b302f5c99fccfd9, type: 2}
+  - {fileID: 11400000, guid: 7441d9d9cb3104368aa8c1987bae5ab9, type: 2}
+  - {fileID: 11400000, guid: bce574c701fbe4c8eb73f4f3d89f0f4c, type: 2}
