@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.UpgradeDefinition
   id: power_sifter
   displayName: Power Sifter
-  description: "Motorize the sieve \u2014 sifting earns three times as much."
+  description: 'Motorize the sieve: sifting earns three times as much.'
   cost: 50000
   type: 2
   targetGenerator: {fileID: 0}

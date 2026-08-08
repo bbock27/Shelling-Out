@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.GameBalance
   currencyName: Sand Dollars
   premiumCurrencyName: Pearls
-  startingCurrency: 10000000000000
+  startingCurrency: 0
   baseClickPower: 1
   autosaveIntervalSeconds: 30
   offlineCapHours: 8
@@ -29,7 +29,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 287837bb2fbd8438fbe243b7547c13af, type: 2}
   - {fileID: 11400000, guid: 2c86684e40fa64965ac6f66c5fd4ce13, type: 2}
   - {fileID: 11400000, guid: 7c8e729796d164a1f8b6256cf82addca, type: 2}
-  - {fileID: 11400000, guid: 24dbe3908c73c4b5bb4ce2f885cdef79, type: 2}
+  - {fileID: 11400000, guid: eae6466af2ce04ec49c8a7578763f096, type: 2}
   - {fileID: 11400000, guid: 53275adb92ee542f289076fd8b23f369, type: 2}
   upgrades:
   - {fileID: 11400000, guid: 85782453f5ca3476a9c0c21af9ce2496, type: 2}

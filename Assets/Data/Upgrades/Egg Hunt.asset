@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.UpgradeDefinition
   id: egg_hunt
   displayName: Egg Hunt
-  description: "Your sieve turns up Egg Shells \u2014 sifts are worth 5\xD7 more."
+  description: 'Your sieve turns up Egg Shells: sifts are worth 5x more.'
   cost: 5000
   type: 3
   targetGenerator: {fileID: 0}

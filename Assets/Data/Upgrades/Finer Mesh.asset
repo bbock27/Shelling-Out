@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.UpgradeDefinition
   id: finer_mesh
   displayName: Finer Mesh
-  description: "A tighter sieve weave \u2014 sifting earns twice as much."
+  description: 'A tighter sieve weave: sifting earns twice as much.'
   cost: 500
   type: 2
   targetGenerator: {fileID: 0}

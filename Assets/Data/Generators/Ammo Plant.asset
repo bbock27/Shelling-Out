@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.GeneratorDefinition
   id: ammo_plant
   displayName: Ammo Plant
-  description: Presses out shells around the clock. Don't ask for whom.
+  description: Presses out shells around the clock. Don't ask why.
   baseCost: 1400000
   costGrowth: 1.11
   baseProduction: 16000

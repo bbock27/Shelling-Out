@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.UpgradeDefinition
   id: locked_and_loaded
   displayName: Locked and Loaded
-  description: "Your sieve turns up Shotgun Shells \u2014 sifts are worth 25\xD7
-    more."
+  description: 'Your sieve turns up Shotgun Shells: sifts are worth 25x more.'
   cost: 250000
   type: 3
   targetGenerator: {fileID: 0}
