@@ -48,7 +48,7 @@ namespace ShellingOut
 
             var shell = gm.CurrentShellType;
             label.text = shell != null
-                ? $"+{NumberFormatter.Format(gm.ClickPower)} per sift  ·  {shell.displayName}"
+                ? $"+{NumberFormatter.Format(gm.ClickPower)} per sift  {shell.displayName}"
                 : $"+{NumberFormatter.Format(gm.ClickPower)} per sift";
         }
 
