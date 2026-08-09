@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 63416b47f794b8d4abeda39ffae3e3a5
+guid: 3d8af59df43ed864d99f89f11004dc64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7797666404119938661
-    second: highQualityShell_0
+      213: -4535938196038874894
+    second: shotgunShells_0
+  - first:
+      213: 2272794885312626626
+    second: shotgunShells_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: highQualityShell_0
+      name: shotgunShells_0
       rect:
         serializedVersion: 2
         x: 3
-        y: 4
-        width: 269
-        height: 226
+        y: 6
+        width: 26
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 566019ed740e63c60800000000000000
-      internalID: 7797666404119938661
+      spriteID: 2f80afd3e3c1d01c0800000000000000
+      internalID: -4535938196038874894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shotgunShells_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf326a08e69a8f10800000000000000
+      internalID: 2272794885312626626
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      highQualityShell_0: 7797666404119938661
+      shotgunShells_0: -4535938196038874894
+      shotgunShells_1: 2272794885312626626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
