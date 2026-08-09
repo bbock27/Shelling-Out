@@ -16,6 +16,9 @@ namespace ShellingOut
         public UpgradeManager(GameManager gm)
         {
             this.gm = gm;
+            // Register default-unlocked shell types immediately -- on a fresh
+            // start (no save) nothing else triggers a Recalculate.
+            Recalculate();
         }
 
         public bool IsPurchased(UpgradeDefinition def) => def != null && purchased.Contains(def.id);

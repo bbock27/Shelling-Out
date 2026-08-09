@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShellingOut.UpgradeDefinition
   id: shell_shock
   displayName: Shell Shock
-  description: Skeet Ranges produce twice as much.
+  description: Shooting Ranges produce twice as much.
   cost: 400000
   type: 0
   targetGenerator: {fileID: 11400000, guid: eae6466af2ce04ec49c8a7578763f096, type: 2}
