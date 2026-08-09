@@ -16,5 +16,5 @@ MonoBehaviour:
   displayName: Beach Shell
   clickValueMultiplier: 1
   unlockedByDefault: 1
-  sprite: {fileID: 21300000, guid: c27391bdb54d14227809aff43738a6f8, type: 3}
-  tint: {r: 0.9098039, g: 0.7882353, b: 0.627451, a: 1}
+  sprite: {fileID: 21300000, guid: 6f6c7f8495363724fbaf0ecda098c666, type: 3}
+  tint: {r: 1, g: 1, b: 1, a: 1}

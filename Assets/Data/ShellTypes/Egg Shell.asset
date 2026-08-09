@@ -16,5 +16,5 @@ MonoBehaviour:
   displayName: Egg Shell
   clickValueMultiplier: 5
   unlockedByDefault: 0
-  sprite: {fileID: 21300000, guid: f675f5f4370d64ed78a6531fa08a3b90, type: 3}
+  sprite: {fileID: 21300000, guid: fe3a645bfd5fb274dabdf2bb2eb36a1b, type: 3}
   tint: {r: 0.9137255, g: 0.94509804, b: 0.9607843, a: 1}

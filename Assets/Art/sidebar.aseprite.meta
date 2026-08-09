@@ -127,7 +127,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: sidebar
     originalName: 
-    pivot: {x: 0.4955157, y: -0.005681818}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -135,8 +135,8 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 223
-      height: 352
+      width: 235
+      height: 357
     spriteID: f197cfb083974394eb63c34fc0f2bc7d
     spriteBone: []
     spriteOutline: []
@@ -165,10 +165,10 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 7
-        y: 2
-        width: 223
-        height: 352
+        x: 0
+        y: 0
+        width: 235
+        height: 357
       spriteId: f197cfb083974394eb63c34fc0f2bc7d
     linkedCells: []
     tileCells: []

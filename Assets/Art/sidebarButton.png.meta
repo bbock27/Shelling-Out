@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6f6c7f8495363724fbaf0ecda098c666
+guid: 3ecb77c9533dca64fac3aac8d92dcf38
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4156648207058592388
-    second: smallshell_0
+      213: -4512468392270877722
+    second: sidebarButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 45, y: 27, z: 50, w: 29}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smallshell_0
+      name: sidebarButton_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 4
         y: 1
-        width: 48
-        height: 39
+        width: 209
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 482edfd75816fa930800000000000000
-      internalID: 4156648207058592388
+      spriteID: 6eb2482c7ed7061c0800000000000000
+      internalID: -4512468392270877722
       vertices: []
       indices: 
       edges: []
@@ -126,7 +126,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      smallshell_0: 4156648207058592388
+      sidebarButton_0: -4512468392270877722
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

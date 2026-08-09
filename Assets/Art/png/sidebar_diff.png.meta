@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fe3a645bfd5fb274dabdf2bb2eb36a1b
+guid: 974b2c32e9786da43b1499fc81f9aac4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4957757172245679981
-    second: eggshell_0
+      213: 5962646908707501376
+    second: sidebar_diff_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 49, y: 27, z: 36, w: 34}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eggshell_0
+      name: sidebar_diff_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 51
-        height: 56
+        x: 0
+        y: 0
+        width: 235
+        height: 357
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 390b6a18e12823bb0800000000000000
-      internalID: -4957757172245679981
+      spriteID: 0457792a5c39fb250800000000000000
+      internalID: 5962646908707501376
       vertices: []
       indices: 
       edges: []
@@ -126,7 +126,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      eggshell_0: -4957757172245679981
+      sidebar_diff_0: 5962646908707501376
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
