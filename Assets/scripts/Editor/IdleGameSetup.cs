@@ -68,12 +68,28 @@ namespace ShellingOut.EditorTools
 
             var sample = RuntimeDefaults.BuildSampleBalance();
 
-            // Point unlock upgrades at the shell type assets already on disk.
+            // Point the upgrades' shell references (unlock targets and gates)
+            // at the shell type assets already on disk.
             foreach (var upg in sample.upgrades)
             {
-                if (upg.type != UpgradeType.UnlockShellType || upg.targetShellType == null) continue;
-                var onDisk = balance.shellTypes.Find(s => s != null && s.id == upg.targetShellType.id);
-                if (onDisk != null) upg.targetShellType = onDisk;
+                if (upg.targetShellType != null)
+                {
+                    var onDisk = balance.shellTypes.Find(s => s != null && s.id == upg.targetShellType.id);
+                    if (onDisk != null) upg.targetShellType = onDisk;
+                }
+                if (upg.requiredShellType != null)
+                {
+                    var onDisk = balance.shellTypes.Find(s => s != null && s.id == upg.requiredShellType.id);
+                    if (onDisk != null) upg.requiredShellType = onDisk;
+                }
+            }
+
+            // Same for the generators' shell gates.
+            foreach (var gen in sample.generators)
+            {
+                if (gen.requiredShellType == null) continue;
+                var onDisk = balance.shellTypes.Find(s => s != null && s.id == gen.requiredShellType.id);
+                if (onDisk != null) gen.requiredShellType = onDisk;
             }
 
             foreach (var gen in sample.generators)
@@ -117,12 +133,12 @@ namespace ShellingOut.EditorTools
                 AssetDatabase.CreateFolder(DataFolder, "Upgrades");
 
             // Build the in-memory sample content, then persist every piece as
-            // an asset (shell types before upgrades, which reference them).
+            // an asset (shell types first: generators and upgrades reference them).
             var balance = RuntimeDefaults.BuildSampleBalance();
-            foreach (var gen in balance.generators)
-                AssetDatabase.CreateAsset(gen, $"{DataFolder}/Generators/{gen.name}.asset");
             foreach (var shell in balance.shellTypes)
                 AssetDatabase.CreateAsset(shell, $"{DataFolder}/ShellTypes/{shell.name}.asset");
+            foreach (var gen in balance.generators)
+                AssetDatabase.CreateAsset(gen, $"{DataFolder}/Generators/{gen.name}.asset");
             foreach (var upg in balance.upgrades)
                 AssetDatabase.CreateAsset(upg, $"{DataFolder}/Upgrades/{upg.name}.asset");
             AssetDatabase.CreateAsset(balance, $"{DataFolder}/GameBalance.asset");

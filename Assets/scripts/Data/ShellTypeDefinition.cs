@@ -21,8 +21,10 @@ namespace ShellingOut
         public bool unlockedByDefault;
 
         [Header("Presentation")]
-        [Tooltip("Art for this shell. Left empty, sift bursts render it as a plain rectangle colored by the tint below.")]
+        [Tooltip("Art for this shell. Left empty, sift bursts and the pile render it as a plain rectangle colored by the tint below.")]
         public Sprite sprite;
         public Color tint = Color.white;
+        [Tooltip("Relative frequency in the shell pile once unlocked; heavier = more common. 0 = never shown in the pile.")]
+        public float pileWeight = 1f;
     }
 }

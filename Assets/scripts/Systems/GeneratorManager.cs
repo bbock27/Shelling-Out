@@ -106,6 +106,10 @@ namespace ShellingOut
 
         public bool TryBuy(GeneratorState s)
         {
+            // Gated generators can't be bought until their shell type is unlocked.
+            if (s.Def.requiredShellType != null && !gm.Upgrades.IsShellUnlocked(s.Def.requiredShellType))
+                return false;
+
             int count = ResolveBuyCount(s);
             double cost = CostOf(s, count);
             if (!gm.Currency.Spend(cost)) return false;

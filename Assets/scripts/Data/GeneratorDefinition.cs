@@ -22,6 +22,8 @@ namespace ShellingOut
         [Header("Progression")]
         [Tooltip("Row appears once lifetime earnings this run reach this value.")]
         public double unlockAtLifetimeEarnings = 0;
+        [Tooltip("Shell type that must be unlocked before this generator can appear or be bought. Empty = no gate.")]
+        public ShellTypeDefinition requiredShellType;
 
         [Header("Presentation")]
         public Sprite icon;

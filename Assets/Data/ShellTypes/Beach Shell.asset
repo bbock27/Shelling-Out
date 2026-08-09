@@ -18,3 +18,4 @@ MonoBehaviour:
   unlockedByDefault: 1
   sprite: {fileID: 21300000, guid: 6f6c7f8495363724fbaf0ecda098c666, type: 3}
   tint: {r: 1, g: 1, b: 1, a: 1}
+  pileWeight: 10

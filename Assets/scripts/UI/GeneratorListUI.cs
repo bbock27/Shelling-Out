@@ -44,8 +44,10 @@ namespace ShellingOut
             foreach (var row in rows)
             {
                 var state = gm.Generators.Get(row.Def.id);
+                bool shellOk = row.Def.requiredShellType == null ||
+                               gm.Upgrades.IsShellUnlocked(row.Def.requiredShellType);
                 bool unlocked = (state != null && state.Owned > 0) ||
-                                gm.Currency.LifetimeThisRun >= row.Def.unlockAtLifetimeEarnings;
+                                (shellOk && gm.Currency.LifetimeThisRun >= row.Def.unlockAtLifetimeEarnings);
                 if (row.gameObject.activeSelf != unlocked)
                     row.gameObject.SetActive(unlocked);
             }

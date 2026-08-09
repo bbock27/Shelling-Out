@@ -23,7 +23,6 @@ MonoBehaviour:
   prestigeExponent: 0.5
   pearlBonusPerUnit: 0.1
   sieveSprite: {fileID: 21300000, guid: 1bdb0f1b75b19a84a8ac4b9658b5ec31, type: 3}
-  shellSprite: {fileID: 21300000, guid: 6f6c7f8495363724fbaf0ecda098c666, type: 3}
   generators:
   - {fileID: 11400000, guid: 6cf666558229f4f929b7531fc9cadf34, type: 2}
   - {fileID: 11400000, guid: 287837bb2fbd8438fbe243b7547c13af, type: 2}

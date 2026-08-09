@@ -21,3 +21,4 @@ MonoBehaviour:
   targetShellType: {fileID: 0}
   multiplier: 2
   unlockAtLifetimeEarnings: 100
+  requiredShellType: {fileID: 0}

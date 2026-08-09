@@ -31,11 +31,17 @@ namespace ShellingOut
 
             b.generators = new List<GeneratorDefinition> { comber, tideTrap, henHouse, hatchery, skeet, ammoPlant };
 
-            var beach   = Shell("beach_shell",   "Beach Shell",   1,  true,  new Color32(0xE8, 0xC9, 0xA0, 0xFF));
-            var egg     = Shell("egg_shell",     "Egg Shell",     5,  false, new Color32(0xE9, 0xF1, 0xF5, 0xFF));
-            var shotgun = Shell("shotgun_shell", "Shotgun Shell", 25, false, new Color32(0xE0, 0x5A, 0x3A, 0xFF));
+            var beach   = Shell("beach_shell",   "Beach Shell",   1,  true,  new Color32(0xE8, 0xC9, 0xA0, 0xFF), 10f);
+            var egg     = Shell("egg_shell",     "Egg Shell",     5,  false, new Color32(0xE9, 0xF1, 0xF5, 0xFF), 3f);
+            var shotgun = Shell("shotgun_shell", "Shotgun Shell", 25, false, new Color32(0xE0, 0x5A, 0x3A, 0xFF), 1f);
 
             b.shellTypes = new List<ShellTypeDefinition> { beach, egg, shotgun };
+
+            // Egg/shotgun-tier generators require their shell type unlocked first.
+            henHouse.requiredShellType = egg;
+            hatchery.requiredShellType = egg;
+            skeet.requiredShellType = shotgun;
+            ammoPlant.requiredShellType = shotgun;
 
             b.upgrades = new List<UpgradeDefinition>
             {
@@ -48,16 +54,23 @@ namespace ShellingOut
                 Upg("power_sifter",    "Power Sifter",    "Motorize the sieve: sifting earns three times as much.", 50000, UpgradeType.ClickMultiplier,    null,      3,   25000),
                 Upg("twin_incubators", "Twin Incubators", "Hatcheries produce twice as much.",                    150000,  UpgradeType.GeneratorMultiplier, hatchery,  2,   80000),
                 UpgShell("locked_and_loaded", "Locked and Loaded", "Your sieve turns up Shotgun Shells: sifts are worth 25x more.", 250000, shotgun, 100000),
-                Upg("shell_shock",     "Shell Shock",     "Skeet Ranges produce twice as much.",                  400000,  UpgradeType.GeneratorMultiplier, skeet,     2,   200000),
+                Upg("shell_shock",     "Shell Shock",     "Shooting Ranges produce twice as much.",                  400000,  UpgradeType.GeneratorMultiplier, skeet,     2,   200000),
                 Upg("shell_company",   "Shell Company",   "Incorporate. All production doubled.",                 1000000, UpgradeType.GlobalMultiplier,    null,      2,   500000),
                 Upg("overtime_shift",  "Overtime Shift",  "Ammo Plants produce twice as much.",                   5000000, UpgradeType.GeneratorMultiplier, ammoPlant, 2,   2500000),
             };
+
+            // Generator upgrades inherit their generator's shell gate, and the
+            // shotgun unlock itself waits for the egg tier (strict ladder).
+            foreach (var upg in b.upgrades)
+                if (upg.type == UpgradeType.GeneratorMultiplier && upg.targetGenerator != null)
+                    upg.requiredShellType = upg.targetGenerator.requiredShellType;
+            b.upgrades.Find(u => u.id == "locked_and_loaded").requiredShellType = egg;
 
             return b;
         }
 
         static ShellTypeDefinition Shell(string id, string displayName, double clickValueMultiplier,
-            bool unlockedByDefault, Color tint)
+            bool unlockedByDefault, Color tint, float pileWeight)
         {
             var s = ScriptableObject.CreateInstance<ShellTypeDefinition>();
             s.name = displayName;
@@ -66,6 +79,7 @@ namespace ShellingOut
             s.clickValueMultiplier = clickValueMultiplier;
             s.unlockedByDefault = unlockedByDefault;
             s.tint = tint;
+            s.pileWeight = pileWeight;
             return s;
         }
 

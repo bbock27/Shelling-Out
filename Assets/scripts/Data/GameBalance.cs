@@ -37,8 +37,6 @@ namespace ShellingOut
         [Header("Presentation")]
         [Tooltip("Art for the sieve button, applied to its Image at Play. Left empty, the sieve keeps whatever the scene authored (no sprite = plain tinted rect).")]
         public Sprite sieveSprite;
-        [Tooltip("Fallback art for the shell pile when ShellPileUI's own sprite list is empty. Left empty too, pile shells render as plain tinted rectangles.")]
-        public Sprite shellSprite;
 
         [Header("Content")]
         public List<GeneratorDefinition> generators = new List<GeneratorDefinition>();

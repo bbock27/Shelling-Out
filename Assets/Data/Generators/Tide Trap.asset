@@ -19,5 +19,6 @@ MonoBehaviour:
   costGrowth: 1.15
   baseProduction: 4
   unlockAtLifetimeEarnings: 60
+  requiredShellType: {fileID: 0}
   icon: {fileID: 0}
   tint: {r: 0.6039216, g: 0.76862746, b: 0.9098039, a: 1}

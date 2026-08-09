@@ -21,7 +21,8 @@ namespace ShellingOut
         public bool IsPurchased(UpgradeDefinition def) => def != null && purchased.Contains(def.id);
 
         public bool IsUnlocked(UpgradeDefinition def) =>
-            gm.Currency.LifetimeThisRun >= def.unlockAtLifetimeEarnings;
+            gm.Currency.LifetimeThisRun >= def.unlockAtLifetimeEarnings &&
+            (def.requiredShellType == null || IsShellUnlocked(def.requiredShellType));
 
         public double GetGeneratorMultiplier(string generatorId) =>
             generatorMultipliers.TryGetValue(generatorId, out var m) ? m : 1.0;
@@ -32,6 +33,8 @@ namespace ShellingOut
         public bool TryBuy(UpgradeDefinition def)
         {
             if (def == null || IsPurchased(def)) return false;
+            // Gated upgrades can't be bought until their shell type is unlocked.
+            if (def.requiredShellType != null && !IsShellUnlocked(def.requiredShellType)) return false;
             if (!gm.Currency.Spend(def.cost)) return false;
             purchased.Add(def.id);
             Recalculate();
